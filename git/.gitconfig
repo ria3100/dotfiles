@@ -1,0 +1,25 @@
+[user]
+  name = ria
+  email = ria000130@gmail.com
+[alias]
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
+  ci = commit
+  a = add
+  st = status
+  plf = pull --ff-only
+  unstage = restore --staged
+  b = branch
+  ch = checkout
+[color]
+  ui = auto
+[core]
+  editor = vim -c \"set fenc=utf-8\"
+  excludesfile = ~/.gitignore_global
+[help]
+  autocorrect = 10
+[fetch]
+  prune = true
+[pull]
+  rebase = false
+[init]
+  defaultBranch = main

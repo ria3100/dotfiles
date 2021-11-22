@@ -1,0 +1,51 @@
+add_newline = false
+
+format = """\
+  $username\
+  $directory\
+  $git_branch\
+  $git_commit\
+  $git_state\
+  $git_status\
+  $deno\
+  $golang\
+  $nodejs\
+  $rust\
+  $memory_usage\
+  $custom\
+  $line_break\
+  $jobs\
+  $time\
+  $character\
+  """
+
+[character]
+success_symbol = "[❯](bold fg:79)"
+error_symbol = "[❯](bold fg:170)"
+vicmd_symbol = "[❮](bold fg:79)"
+
+[battery]
+disabled = true
+
+[directory]
+truncate_to_repo = false
+
+[deno]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "◆ "
+
+[golang]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "◆ "
+
+[nodejs]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "◆ "
+
+[rust]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "◆ "
+
+[time]
+format = '\[[$time]($style)\]'
+
