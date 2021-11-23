@@ -20,4 +20,4 @@ cp starship/starship.toml ~/.config
 cp git/.gitconfig ~/
 cp git/.gitignore_global ~/
 
-cp tmux/.tmux.comf ~/
+cp tmux/.tmux.conf ~/
