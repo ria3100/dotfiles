@@ -13,8 +13,8 @@ npm install --global yarn
 
 # copy
 mkdir ~/.config
-cp fish ~/.config/
-cp nvim ~/.config/
+cp -r fish ~/.config/
+cp -r nvim ~/.config/
 cp starship/starship.toml ~/.config
 
 cp git/.gitconfig ~/
