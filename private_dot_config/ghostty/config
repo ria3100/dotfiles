@@ -1,8 +1,7 @@
 # Ghostty Configuration
 
 
-font-family = JetBrains Mono
-font-family = "BIZ UDGothic Bold"
+font-family = "UDEV Gothic NFLG"
 font-size = 14
 theme = Monokai Soda
 background-opacity = 0.95
