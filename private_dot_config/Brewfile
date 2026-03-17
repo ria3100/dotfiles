@@ -61,6 +61,8 @@ cask "zen"
 # Font
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
+cask "font-udev-gothic"
+cask "font-udev-gothic-nf"
 
 # App Store
 mas "Amphetamine", id: 937984704
