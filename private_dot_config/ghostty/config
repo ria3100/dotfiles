@@ -1,0 +1,35 @@
+# Ghostty Configuration
+
+
+font-family = JetBrains Mono
+font-family = "BIZ UDGothic Bold"
+font-size = 14
+theme = Monokai Soda
+background-opacity = 0.95
+background-blur-radius = 5
+
+window-height = 80
+window-width = 140
+
+# ウィンドウ
+window-padding-x = 4
+window-padding-y = 4
+window-padding-balance = true
+# ウィンドウ状態を保存（終了時のサイズや位置を記憶）
+window-save-state = always
+
+# macOS 設定
+macos-titlebar-style = tabs
+# Option キーを Alt として扱う
+macos-option-as-alt = true
+
+# keybind
+keybind = super+plus=unbind
+keybind = super+equal=unbind
+keybind = super+-=unbind
+keybind = cmd+enter=ignore
+
+split-divider-color = #333333
+
+# 非フォーカスペインを少し暗くして区別しやすく
+unfocused-split-opacity = 0.9

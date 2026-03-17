@@ -1,0 +1,32 @@
+# PATH
+export PATH="$HOME/.local/bin:$HOME/.antigravity/antigravity/bin:/Applications/Codex.app/Contents/Resources:$PATH"
+
+# Tools
+eval "$(mise activate zsh)"
+eval "$(sheldon source)"
+eval "$(zoxide init zsh)"
+
+# Secrets
+source "$HOME/.secrets"
+
+# Aliases
+alias vim='nvim'
+
+# メール通知を無効化
+unset MAILCHECK
+
+# Zellij with random star name
+zj() {
+  local stars=(
+    "Sirius" "Vega" "Altair" "Deneb" "Rigel"
+    "Betelgeuse" "Antares" "Spica" "Pollux" "Canopus"
+    "Arcturus" "Capella" "Aldebaran" "Regulus" "Castor"
+    "Fomalhaut" "Achernar" "Procyon" "Bellatrix" "Polaris"
+    "Mira" "Algol" "Atlas" "Electra" "Merope"
+  )
+  local name=${stars[$RANDOM % ${#stars[@]} + 1]}
+  zellij attach "$name" 2>/dev/null || zellij -s "$name" "$@"
+}
+
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"
