@@ -11,6 +11,7 @@ source "$HOME/.secrets"
 
 # Aliases
 alias vim='nvim'
+alias ls='eza'
 
 # メール通知を無効化
 unset MAILCHECK
