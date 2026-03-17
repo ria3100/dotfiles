@@ -63,6 +63,15 @@ defaults write dev.ensan.inputmethod.azooKeyMac "dev.ensan.inputmethod.azooKeyMa
 defaults write dev.ensan.inputmethod.azooKeyMac "dev.ensan.inputmethod.azooKeyMac.preference.typeHalfSpace" -bool true
 defaults write dev.ensan.inputmethod.azooKeyMac "dev.ensan.inputmethod.azooKeyMac.preference.zenzaiInferenceLimit" -int 1
 
+# Amphetamine
+defaults write com.if.Amphetamine "Hide Dock Icon" -bool true
+defaults write com.if.Amphetamine "Start Session At Launch" -bool true
+defaults write com.if.Amphetamine "Allow Display Sleep" -bool false
+defaults write com.if.Amphetamine "Allow Screen Saver" -bool false
+defaults write com.if.Amphetamine "Icon Style" -int 6
+defaults write com.if.Amphetamine "Lower Icon Opacity" -bool true
+defaults write com.if.Amphetamine "Show Welcome Window" -bool false
+
 # Security
 # Gatekeeper: allow apps from anywhere (may require manual override on recent macOS)
 sudo spctl --master-disable 2>/dev/null || true
