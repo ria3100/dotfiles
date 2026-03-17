@@ -1,6 +1,13 @@
 [user]
 	name = Ria
 	email = ria000130@gmail.com
+	signingkey = ~/.ssh/id_ed25519_github.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
 [core]
 	editor = vim -c \"set fenc=utf-8\"
 	excludesfile = ~/.gitignore_global
