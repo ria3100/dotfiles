@@ -76,10 +76,6 @@
 	"workbench.editor.customLabels.patterns": {
 		"**/{index,page,layout,utils,types}.{ts,tsx}": "${dirname}/${filename}.${extname}"
 	},
-	"workbench.editorAssociations": {
-		"*.ipynb": "jupyter-notebook"
-	},
-
 	// ─── Workbench: カスタムカラー ───
 	"workbench.colorCustomizations": {
 		"sideBar.background": "#2e2f29",
@@ -152,12 +148,6 @@
 	},
 	"[github-actions-workflow]": {
 		"editor.defaultFormatter": "redhat.vscode-yaml"
-	},
-
-	// ─── Notebook ───
-	"notebook.cellToolbarLocation": {
-		"default": "right",
-		"jupyter-notebook": "left"
 	},
 
 	// ─── GitHub PR ───
