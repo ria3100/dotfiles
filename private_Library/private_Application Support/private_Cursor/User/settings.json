@@ -78,15 +78,15 @@
 	},
 	// ─── Workbench: カスタムカラー ───
 	"workbench.colorCustomizations": {
-		"sideBar.background": "#2e2f29",
-		"sideBarSectionHeader.background": "#363731",
-		"titleBar.activeBackground": "#363731",
-		"titleBar.inactiveBackground": "#2e2f29",
-		"tab.activeBackground": "#363731",
-		"tab.inactiveBackground": "#2e2f29",
-		"integratedTerminal.ansiColors.cyan": "#00c5c7",
-		"integratedTerminal.ansiColors.red": "#f92a72",
-		"integratedTerminal.ansiColors.blue": "#66d9ef"
+		"sideBar.background": "#2e2f29", // サイドバー背景
+		"sideBarSectionHeader.background": "#363731", // サイドバーセクション見出し
+		"titleBar.activeBackground": "#363731", // タイトルバー（アクティブ）
+		"titleBar.inactiveBackground": "#2e2f29", // タイトルバー（非アクティブ）
+		"tab.activeBackground": "#363731", // アクティブタブ
+		"tab.inactiveBackground": "#2e2f29", // 非アクティブタブ
+		"integratedTerminal.ansiColors.cyan": "#00c5c7", // ターミナル: シアン
+		"integratedTerminal.ansiColors.red": "#f92a72", // ターミナル: レッド
+		"integratedTerminal.ansiColors.blue": "#66d9ef" // ターミナル: ブルー
 	},
 
 	// ─── Window ───
