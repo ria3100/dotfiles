@@ -3,6 +3,9 @@ set -euo pipefail
 
 echo "Configuring macOS defaults..."
 
+# Appearance
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+
 # Keyboard
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 25
@@ -38,9 +41,21 @@ defaults write com.apple.screencapture location -string "~/Pictures"
 # Mission Control
 defaults write com.apple.dock mru-spaces -bool false
 
+# Stage Manager
+defaults write com.apple.WindowManager GloballyEnabled -bool false
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+
+# Menu bar clock
+defaults write com.apple.menuextra.clock ShowSeconds -bool true
+
 # Safari
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+
+# Google Chrome: disable "Email Link" and "Print" shortcuts
+defaults write com.google.Chrome NSUserKeyEquivalents -dict \
+  "リンクをメールで送信" "@\$p" \
+  "印刷..." "@\$p"
 
 # Security
 # Gatekeeper: allow apps from anywhere (may require manual override on recent macOS)
