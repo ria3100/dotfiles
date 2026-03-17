@@ -38,6 +38,14 @@ defaults write com.apple.screencapture location -string "~/Pictures"
 # Mission Control
 defaults write com.apple.dock mru-spaces -bool false
 
+# Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+
+# Security
+# Gatekeeper: allow apps from anywhere (may require manual override on recent macOS)
+sudo spctl --master-disable 2>/dev/null || true
+
 # Restart affected apps
 killall Dock Finder 2>/dev/null || true
 
