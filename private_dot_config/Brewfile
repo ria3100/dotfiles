@@ -31,6 +31,9 @@ brew "jj"
 brew "mise"
 brew "uv"
 brew "chezmoi"
+brew "rustup"
+brew "wasm-pack"
+brew "cargo-watch"
 
 # Infra
 brew "cloudflared"
