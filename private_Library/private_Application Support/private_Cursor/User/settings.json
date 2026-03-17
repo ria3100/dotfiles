@@ -173,15 +173,4 @@
 	// ─── Cursor ───
 	"cursor.composer.textSizeScale": 1.15,
 	"cursor.composer.usageSummaryDisplay": "always",
-
-	// ─── APC (UI カスタマイズ) ───
-	"apc.electron": {
-		"backgroundColor": "rgba(40, 42, 54, 0.4)",
-		"frame": false,
-		"transparent": true,
-		"titleBarStyle": "hiddenInset",
-		"vibrancy": "ultra-dark",
-		"opacity": 0.85,
-		"visualEffectState": "active"
-	}
 }

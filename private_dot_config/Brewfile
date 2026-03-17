@@ -71,7 +71,6 @@ mas "Amphetamine", id: 937984704
 vscode "astro-build.astro-vscode"
 vscode "cardinal90.multi-cursor-case-preserve"
 vscode "christian-kohler.npm-intellisense"
-vscode "drcika.apc-extension"
 vscode "github.vscode-github-actions"
 vscode "github.vscode-pull-request-github"
 vscode "humao.rest-client"
