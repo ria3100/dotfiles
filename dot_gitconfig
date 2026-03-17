@@ -2,5 +2,25 @@
 	name = Ria
 	email = ria000130@gmail.com
 [core]
-        editor = vim -c \"set fenc=utf-8\"
-        excludesfile = /Users/ria/.gitignore_global
+	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = ~/.gitignore_global
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[rerere]
+	enabled = true
+[diff]
+	algorithm = histogram
+[merge]
+	conflictstyle = zdiff3
+[fetch]
+	prune = true
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	sw = switch
+	lg = log --oneline --graph
