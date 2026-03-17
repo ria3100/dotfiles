@@ -57,6 +57,12 @@ defaults write com.google.Chrome NSUserKeyEquivalents -dict \
   "リンクをメールで送信" "@\$p" \
   "印刷..." "@\$p"
 
+# azooKey
+defaults write dev.ensan.inputmethod.azooKeyMac "dev.ensan.inputmethod.azooKeyMac.preference.enableLiveConversion" -bool true
+defaults write dev.ensan.inputmethod.azooKeyMac "dev.ensan.inputmethod.azooKeyMac.preference.enableZenzai" -bool true
+defaults write dev.ensan.inputmethod.azooKeyMac "dev.ensan.inputmethod.azooKeyMac.preference.typeHalfSpace" -bool true
+defaults write dev.ensan.inputmethod.azooKeyMac "dev.ensan.inputmethod.azooKeyMac.preference.zenzaiInferenceLimit" -int 1
+
 # Security
 # Gatekeeper: allow apps from anywhere (may require manual override on recent macOS)
 sudo spctl --master-disable 2>/dev/null || true

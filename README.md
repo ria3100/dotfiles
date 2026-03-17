@@ -30,10 +30,6 @@ security add-generic-password -s "npm-github-packages" -a "ria" -w "<token>"
 security add-generic-password -s "npm-registry" -a "ria" -w "<token>"
 ```
 
-**Google 日本語入力:**
-- スペース入力: 常に半角
-- 数字入力: 常に半角
-
 ## 管理対象
 
 ### dotfiles
@@ -52,7 +48,7 @@ security add-generic-password -s "npm-registry" -a "ria" -w "<token>"
 | カテゴリ | 内容 |
 |---------|------|
 | brew | git, gh, jq, fd, ripgrep, bat, eza, fzf, zoxide, direnv, sheldon, starship, zsh-completions, zellij, neovim, tig, jj, mise, uv, chezmoi, cloudflared, rustup, wasm-pack, cargo-watch |
-| cask | Cursor, Ghostty, Google Chrome, Zen, Raycast, ChatGPT, Codex, Notion, Figma, Discord, Slack, OBS, Nani, Elgato Wave Link, Karabiner Elements, Google Japanese IME |
+| cask | Cursor, Ghostty, Google Chrome, Zen, Raycast, ChatGPT, Codex, Notion, Figma, Discord, Slack, OBS, Nani, Elgato Wave Link, Karabiner Elements, azooKey |
 | vscode | Cursor 拡張 30個 |
 
 ### macOS デフォルト設定
