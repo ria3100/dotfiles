@@ -1,0 +1,39 @@
+tap "cloudflare/cloudflare"
+
+# Core
+brew "git"
+brew "gh"
+brew "jq"
+brew "tree"
+brew "wget"
+brew "fd"
+brew "ripgrep"
+brew "bat"
+brew "eza"
+brew "fzf"
+brew "zoxide"
+brew "direnv"
+
+# Shell
+brew "sheldon"
+brew "starship"
+brew "zsh-completions"
+brew "zellij"
+
+# Editor
+brew "neovim"
+
+# Git
+brew "tig"
+brew "jj"
+
+# Dev tools
+brew "mise"
+brew "uv"
+brew "chezmoi"
+
+# Infra
+brew "cloudflared"
+
+# Cask
+cask "karabiner-elements"
