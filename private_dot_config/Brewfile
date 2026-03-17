@@ -36,8 +36,22 @@ brew "chezmoi"
 brew "cloudflared"
 
 # Cask
+cask "chatgpt"
+cask "codex-app"
 cask "cursor"
+cask "discord"
+cask "elgato-wave-link"
+cask "figma"
+cask "ghostty"
+cask "google-chrome"
 cask "karabiner-elements"
+cask "nani"
+cask "notion"
+cask "obs"
+cask "raycast"
+cask "slack"
+cask "zed"
+cask "zen"
 
 # Cursor extensions
 vscode "astro-build.astro-vscode"
