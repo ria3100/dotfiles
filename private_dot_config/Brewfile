@@ -58,6 +58,10 @@ cask "slack"
 cask "zed"
 cask "zen"
 
+# Font
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+
 # App Store
 mas "Amphetamine", id: 937984704
 
