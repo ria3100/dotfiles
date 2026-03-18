@@ -21,6 +21,12 @@ if command -v ya &>/dev/null; then
   ya pkg add sanjinso/monokai-vibrant
 fi
 
+# oxc: install oxlint and oxfmt
+if command -v npm &>/dev/null; then
+  echo "Installing oxc tools..."
+  npm i -g oxlint oxfmt
+fi
+
 # Rust: install stable toolchain and wasm target
 if command -v rustup &>/dev/null; then
   echo "Setting up Rust toolchain..."
