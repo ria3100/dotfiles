@@ -2,6 +2,9 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+-- CursorHold の発火を速くする
+vim.opt.updatetime = 200
+
 -- h/lで行をまたいで移動
 vim.opt.whichwrap:append("h,l,<,>,[,]")
 
@@ -20,6 +23,9 @@ vim.opt.statuscolumn = " %=%{v:lnum} "
 -- protoのshimsをPATHの先頭に追加
 local proto_shims = vim.fn.expand("~/.proto/shims")
 vim.env.PATH = proto_shims .. ":" .. vim.env.PATH
+
+-- diff の削除行の埋め文字を空白にする（///を非表示）
+vim.opt.fillchars:append({ diff = " " })
 
 -- セマンティックハイライトを無効化
 vim.g.semantic_tokens_enabled = false
