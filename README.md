@@ -37,10 +37,11 @@ security add-generic-password -s "npm-registry" -a "ria" -w "<token>"
 | カテゴリ | ファイル |
 |---------|---------|
 | シェル | `.zshrc`, `.zshenv`, `.zprofile`, `.vimrc` |
-| エディタ | `.config/nvim/` (LazyVim) |
+| エディタ | `.config/nvim/` (LazyVim + fugitive) |
 | ターミナル | `.config/ghostty/config`, `.config/starship.toml` |
 | プラグイン・キーバインド | `.config/sheldon/plugins.toml`, `.config/karabiner/karabiner.json` |
 | パッケージ管理 | `.npmrc` (Keychain テンプレート), `.config/Brewfile` |
+| CLI ツール | `.local/bin/gf`, `gf-list`, `nvim-remote` |
 | ランタイム | `.config/mise/config.toml` |
 
 ### Brewfile
@@ -73,8 +74,9 @@ security add-generic-password -s "npm-registry" -a "ria" -w "<token>"
 |-----------|------|
 | `run_once_01-install-homebrew.sh` | Homebrew インストール |
 | `run_once_02-brew-bundle.sh.tmpl` | brew bundle（Brewfile 変更時に再実行） |
-| `run_once_03-macos-defaults.sh` | macOS システム設定 |
-| `run_once_04-dev-tools.sh` | mise install, Vite+, Rust toolchain |
+| `run_once_03-ssh-setup.sh` | SSH 設定 |
+| `run_once_04-macos-defaults.sh` | macOS システム設定 |
+| `run_once_05-dev-tools.sh` | mise install, Vite+, Rust toolchain |
 
 ## 日常の使い方
 
