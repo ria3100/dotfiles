@@ -13,6 +13,14 @@ if ! command -v vp &>/dev/null; then
   curl -fsSL https://vite.plus | bash
 fi
 
+# yazi: install plugins and flavors
+if command -v ya &>/dev/null; then
+  echo "Setting up yazi plugins..."
+  ya pkg add yazi-rs/plugins:git
+  ya pkg add yazi-rs/plugins:no-status
+  ya pkg add sanjinso/monokai-vibrant
+fi
+
 # Rust: install stable toolchain and wasm target
 if command -v rustup &>/dev/null; then
   echo "Setting up Rust toolchain..."

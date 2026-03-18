@@ -10,8 +10,10 @@ eval "$(zoxide init zsh)"
 source "$HOME/.secrets"
 
 # Aliases
-alias vim='nvim'
+alias vim='nvim --listen /tmp/nvim.sock'
+alias nvim='nvim --listen /tmp/nvim.sock'
 alias ls='eza'
+alias yazi='yazi --client-id 1'
 
 # メール通知を無効化
 unset MAILCHECK

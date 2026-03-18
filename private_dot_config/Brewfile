@@ -22,6 +22,7 @@ brew "zellij"
 
 # Editor
 brew "neovim"
+brew "yazi"
 
 # Git
 brew "tig"

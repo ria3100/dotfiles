@@ -1,0 +1,15 @@
+#!/bin/bash
+# gf - git files: 差分ファイル一覧 → nvim-remote で開く
+
+gf-list | fzf \
+  --ansi \
+  --delimiter="\t" \
+  --with-nth=2 \
+  --padding=0 \
+  --margin=0 \
+  --preview="echo; echo '  '{1}" \
+  --preview-window=bottom:4:wrap:noborder \
+  --no-input \
+  --no-header \
+  --bind="enter:execute-silent(nvim --server /tmp/nvim.sock --remote {1})+reload(gf-list)" \
+  --bind="ctrl-r:reload(gf-list)"

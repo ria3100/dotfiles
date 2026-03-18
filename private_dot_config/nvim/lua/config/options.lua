@@ -2,6 +2,9 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+-- h/lで行をまたいで移動
+vim.opt.whichwrap:append("h,l,<,>,[,]")
+
 -- 行番号表示を通常の番号に（相対行番号を無効化）
 vim.opt.relativenumber = false
 vim.opt.number = true
