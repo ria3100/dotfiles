@@ -20,10 +20,6 @@ vim.opt.signcolumn = "no"
 -- 行番号の余白を減らすためstatuscolumnをカスタマイズ
 vim.opt.statuscolumn = " %=%{v:lnum} "
 
--- protoのshimsをPATHの先頭に追加
-local proto_shims = vim.fn.expand("~/.proto/shims")
-vim.env.PATH = proto_shims .. ":" .. vim.env.PATH
-
 -- diff の削除行の埋め文字を空白にする（///を非表示）
 vim.opt.fillchars:append({ diff = " " })
 

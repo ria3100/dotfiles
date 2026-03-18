@@ -1,0 +1,10 @@
+# nvim - auto-generated files
+.config/nvim/lazy-lock.json
+
+# npmrc - skip until Keychain tokens are registered
+{{ if or (ne (output "bash" "-c" "security find-generic-password -s npm-github-packages -a ria -w >/dev/null 2>&1 && echo ok || echo ng" | trim) "ok") (ne (output "bash" "-c" "security find-generic-password -s npm-registry -a ria -w >/dev/null 2>&1 && echo ok || echo ng" | trim) "ok") }}
+.npmrc
+{{ end }}
+
+# chezmoi metadata
+README.md

@@ -5,4 +5,5 @@ Host github.com
 Host *
   UseKeychain yes
   AddKeysToAgent yes
+  IdentitiesOnly yes
 

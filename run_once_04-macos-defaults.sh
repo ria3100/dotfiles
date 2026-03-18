@@ -72,10 +72,6 @@ defaults write com.if.Amphetamine "Icon Style" -int 6
 defaults write com.if.Amphetamine "Lower Icon Opacity" -bool true
 defaults write com.if.Amphetamine "Show Welcome Window" -bool false
 
-# Security
-# Gatekeeper: allow apps from anywhere (may require manual override on recent macOS)
-sudo spctl --master-disable 2>/dev/null || true
-
 # Restart affected apps
 killall Dock Finder 2>/dev/null || true
 
