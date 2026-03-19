@@ -90,15 +90,6 @@ chezmoi edit ~/.zshrc
 chezmoi edit --apply ~/.zshrc
 ```
 
-### 変更をリポジトリに反映する
-
-```bash
-cd ~/dotfiles
-git add -A
-git commit -m "Update dotfiles"
-git push
-```
-
 ### 新しいファイルを管理対象に追加
 
 ```bash
