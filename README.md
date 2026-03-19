@@ -80,11 +80,20 @@ security add-generic-password -s "npm-registry" -a "ria" -w "<token>"
 
 ## 日常の使い方
 
-### 設定ファイルを変更した後
+### 設定ファイルを編集する
 
 ```bash
-chezmoi re-add
-cd ~/.local/share/chezmoi
+# ソースファイルを $EDITOR で開く
+chezmoi edit ~/.zshrc
+
+# 編集後にそのまま apply まで実行する
+chezmoi edit --apply ~/.zshrc
+```
+
+### 変更をリポジトリに反映する
+
+```bash
+cd ~/dotfiles
 git add -A
 git commit -m "Update dotfiles"
 git push
