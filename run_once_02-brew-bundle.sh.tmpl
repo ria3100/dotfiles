@@ -2,5 +2,6 @@
 set -euo pipefail
 
 # Brewfile hash: {{ include "private_dot_config/Brewfile" | sha256sum }}
+sudo -v
 echo "Running brew bundle..."
-brew bundle --file={{ joinPath .chezmoi.homeDir ".config/Brewfile" }} --no-lock
+brew bundle --file={{ joinPath .chezmoi.homeDir ".config/Brewfile" }} || true

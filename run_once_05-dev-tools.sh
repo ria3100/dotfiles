@@ -16,9 +16,9 @@ fi
 # yazi: install plugins and flavors
 if command -v ya &>/dev/null; then
   echo "Setting up yazi plugins..."
-  ya pkg add yazi-rs/plugins:git
-  ya pkg add yazi-rs/plugins:no-status
-  ya pkg add sanjinso/monokai-vibrant
+  ya pkg add yazi-rs/plugins:git 2>/dev/null || true
+  ya pkg add yazi-rs/plugins:no-status 2>/dev/null || true
+  ya pkg add sanjinso/monokai-vibrant 2>/dev/null || true
 fi
 
 # oxc: install oxlint and oxfmt

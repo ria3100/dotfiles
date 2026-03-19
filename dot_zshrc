@@ -16,6 +16,7 @@ alias nvim='nvim --listen /tmp/nvim.sock'
 alias ls='eza'
 alias yazi='yazi --client-id 1'
 alias codex='codex --sandbox danger-full-access'
+alias claude='claude --permission-mode auto'
 
 # メール通知を無効化
 unset MAILCHECK

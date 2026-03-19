@@ -48,9 +48,9 @@ defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool fa
 # Menu bar clock
 defaults write com.apple.menuextra.clock ShowSeconds -bool true
 
-# Safari
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+# Safari (may fail on newer macOS due to sandbox)
+defaults write com.apple.Safari IncludeDevelopMenu -bool true 2>/dev/null || true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true 2>/dev/null || true
 
 # Google Chrome: disable "Email Link" and "Print" shortcuts
 defaults write com.google.Chrome NSUserKeyEquivalents -dict \
