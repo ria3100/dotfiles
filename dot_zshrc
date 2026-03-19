@@ -1,6 +1,9 @@
 # PATH
 export PATH="$HOME/.local/bin:$HOME/.antigravity/antigravity/bin:/Applications/Codex.app/Contents/Resources:$PATH"
 
+# Editor
+export EDITOR=nvim
+
 # Tools
 eval "$(mise activate zsh)"
 eval "$(sheldon source)"
