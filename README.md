@@ -9,7 +9,7 @@
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install chezmoi
-chezmoi init --apply ria3100
+chezmoi init --apply --source ~/dotfiles ria3100
 ```
 
 `chezmoi init --apply` で以下が自動実行される:
