@@ -15,10 +15,10 @@ vim.opt.number = true
 
 -- 行番号の幅を狭く設定
 vim.opt.numberwidth = 1
-vim.opt.signcolumn = "no"
+vim.opt.signcolumn = "yes"
 
 -- 行番号の余白を減らすためstatuscolumnをカスタマイズ
-vim.opt.statuscolumn = " %=%{v:lnum} "
+vim.opt.statuscolumn = "%s %=%{v:lnum} "
 
 -- diff の削除行の埋め文字を空白にする（///を非表示）
 vim.opt.fillchars:append({ diff = " " })
